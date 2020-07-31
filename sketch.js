@@ -75,5 +75,11 @@ function mouseDragged() {
 }
 
 function mouseReleased() {
-  lan.fly ();
+  lan.launcher.fly ();
+}
+
+function keyPressed() {
+  if(keyCode === 32) {
+     lan.attach(player.body);
+  }
 }
